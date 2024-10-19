@@ -3,7 +3,6 @@ FROM python:3.11-slim
 
 # Instale as dependências do sistema operacional necessárias
 RUN apt-get update && \
-    apt-get install -y default-libmysqlclient-dev build-essential pkg-config && \
     apt-get clean
 
 # Crie um diretório para o app
